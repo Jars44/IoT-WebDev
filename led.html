@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IoT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="layout">
+      <nav class="navbar">
+        <h3>IoT WebDev</h3>
+      </nav>
+      <section class="page-title">
+        <h3>LED CONTROL</h3>
+      </section>
+      <section class="bottombar">
+        <ul>
+          <li>
+            <a href="/"><i class="fa-solid fa-home"></i></a>
+          </li>
+          <li>
+            <a href="led.html"><i class="fa-solid fa-lightbulb"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-fan"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </section>
+      <section class="leds">
+        <div class="led">
+          <img src="assets/led-off.png" alt="led-on" class="led-image" id="tidurLedImage"/>
+          <p class="led-location-text">RUANG TIDUR</p>
+          <button class="led-submit" id="ledTidur" onclick="setTidurLed()">TURN ON</button>
+        </div>
+        <div class="led">
+          <img src="assets/led-off.png" alt="led-on" class="led-image" id="tamuLedImage"/>
+          <p class="led-location-text">RUANG TAMU</p>
+          <button class="led-submit" id="ledTamu" onclick="setTamuLed()">TURN ON</button>
+        </div>
+        <div class="led">
+          <img src="assets/led-off.png" alt="led-on" class="led-image" id="makanLedImage"/>
+          <p class="led-location-text">RUANG MAKAN</p>
+          <button class="led-submit" id="ledMakan" onclick="setMakanLed()">TURN ON</button>
+        </div>
+        <div class="led">
+          <img src="assets/led-off.png" alt="led-on" class="led-image" id="keluargaLedImage"/>
+          <p class="led-location-text">RUANG KELUARGA</p>
+          <button class="led-submit" id="ledKeluarga" onclick="setKeluargaLed()">TURN ON</button>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
