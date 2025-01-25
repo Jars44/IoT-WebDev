@@ -12,7 +12,7 @@ html {
 .layout {
   max-width: 476px;
   margin: 0 auto;
-  height: 100vh;
+  height: 100vh;  
   border: 1px solid black;
   position: relative;
 }
