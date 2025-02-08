@@ -1,4 +1,4 @@
-const endpoint = "http://192.168.1.12";
+const endpoint = "http://192.168.1.4";
 
 function getTidurLed() {
   fetch(endpoint + "/tidur", {
